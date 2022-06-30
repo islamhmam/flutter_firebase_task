@@ -28,7 +28,7 @@ Future<void> getProfileData() async {
       .doc(uId)
       .get()
   .then((value) {
-    imageUrl=value.data()!['imageUrl'];
+    imageUrl=value.data()!['profileImage'];
     dateOfBirth=value.data()!['dateOfBirth'];
     emit(GetProfileSuccessState());
   }).catchError((e){
