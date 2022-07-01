@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_task/screens/login/login_screen.dart';
+import 'package:flutter_task/screens/progress_screen/components/session_item.dart';
+import 'package:flutter_task/screens/progress_screen/progress_screen.dart';
 
 import 'firebase_options.dart';
 

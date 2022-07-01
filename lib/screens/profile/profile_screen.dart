@@ -4,6 +4,7 @@ import 'dart:typed_data';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_task/screens/profile/cubit/profile_cubit.dart';
 import 'package:flutter_task/screens/profile/cubit/profile_states.dart';
+import 'package:flutter_task/screens/progress_screen/progress_screen.dart';
 import 'package:universal_io/io.dart';
 import 'package:universal_io/prefer_sdk/io.dart';
 import 'package:universal_io/prefer_universal/io.dart';
@@ -48,6 +49,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
         builder: (context,state){
 
           return Scaffold(
+            appBar: AppBar(
+              title: Center(
+                child: MaterialButton(
+                  onPressed: (){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ProgressScreen(),));
+                  },
+                  color: Colors.black38,
+                  child: Text('GO TO PROGRESS SCREEN',
+                  style: TextStyle(
+                    color: Colors.white
+                  ),),
+
+                ),
+              ),
+            ),
             backgroundColor: Colors.grey[200],
             body:(state is GetProfileLoadingState)?
             Center(child: CircularProgressIndicator())
