@@ -1,3 +1,3 @@
-![Preview](/preview/fire1.png)
-![Preview](/preview/fire2.png)
-![Preview](/preview/fire3.png)
+![Preview](/preview/fire1.PNG)
+![Preview](/preview/fire2.PNG)
+![Preview](/preview/fire3.PNG)
